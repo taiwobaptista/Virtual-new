@@ -3,10 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     width: 100vw;
     height: 100vh;
@@ -117,10 +117,14 @@ img {
     .form-wrapper h2{
         display: none;
     }
+
+    .form-wrapper{
+        width: 100%;
+    }
     .form {
         border: none;
         max-width: 90vw;
-        margin-right: 4em;
+        margin-right: 0em;
     }
     .form h3 {
         text-align: center;
@@ -140,4 +144,9 @@ img {
         box-shadow: inset -3px -6px 6px -8px #767881;
         
     }
+
+    #account {
+    float: none;
+    padding-left: 20px;
+}
 }

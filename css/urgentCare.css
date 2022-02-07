@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.img img{
+    width: 100%;
+}
+
+/* section 1 begins (text-area) */
+
+.text-area{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+}
+
+.area-one, .area-two{
+    flex: 2;
+}
+
+.area-one h1{
+    color: #004a7D;
+    font-size: 60px;
+}
+
+.area-two p{
+    padding-bottom: 30px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+span img{
+    margin-left: 20px;
+    margin-top: 0px;
+
+}
+
+#start{
+    margin-bottom: -20px;
+    color: #004a7D;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* section 2 begins (cold-flu-area)*/
+    .cold-flu-area{
+        width: 79%;
+        margin: 40px auto;
+        display: flex;
+        /* box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); */
+        
+    }
+
+   .cold-sub-one{
+        flex: 2;
+        border-right: 2px solid #004a7D;
+   }
+
+   #active, .cold-sub-one p:hover, .cold-sub-one a:hover{
+    color: #004a7D;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+   .cold-sub-one a, .cold-sub-one p{
+       font-size: 22px;
+       font-weight: bold;
+       text-decoration: none;
+       color: #333333;
+       padding: 12px 5px;
+       
+   }
+
+  
+   /* .cold-sub-two begins */
+   .cold-sub-two{
+    flex: 4;
+    margin-right: 50px;
+   }
+
+   .cold-sub-two h2{
+        margin-left: 60px;
+        color: #333333;
+        font-weight: bold;
+        font-size: 28px;
+   }
+
+   .cold-sub-two p{
+    margin-left: 60px;
+    color: #333333;
+    margin-top: 35px;
+    font-size: 15px;
+   }
+
+   table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 25px;
+    color: #333333;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  table span{
+      padding-right: 10px;
+  }
+
+  table .active{
+      color: #004a7D;
+      text-decoration: underline;
+  }
+
+
+  /* section image-arena */
+  .image-arena{
+    max-width: 80%;
+    margin: 90px auto;
+    margin-bottom: 20px;
+  }
+
+  .image-arena button{
+      cursor: pointer;
+      background-color: #004a7D;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 20px;
+      transition: width 2s;
+  }
+
+  .image-arena button:hover{
+      margin-top: 5px;
+      background-color: rgb(160, 160, 36);
+  }
+
+  .mainWrap {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.childWrap {
+    width: 30%;
+     position: relative;
+}
+
+.imgWrap {
+    width: 100%;  
+}
+
+.imgWrap img {
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.imgWrap::after {
+    content: " ";
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+}
+
+.textWrap {
+    position: absolute;
+    bottom: 0px;
+    left: 2rem;
+}
+.textWrap p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: cursive;
+    color: #fff;
+}
+
+
+
+  /* Media screen */
+  @media screen and (max-width: 600px) {
+    .text-area{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .area-one h1{
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .cold-flu-area{
+        display: block;
+        margin-top: -30px;
+    }
+
+    .cold-sub-two {
+        width: 100%;
+    }
+
+    .cold-sub-two h2{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .cold-sub-two p{
+        margin-left: 10px;
+       }
+
+    .cold-flu-area p {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    table{
+        font-size: 17px;
+        margin-left: 0px;
+        
+    }
+
+    td, th {
+        padding: 0px;
+    }
+
+    table span{
+        padding-right: 0px;
+    }
+  
+    .image-arena{
+        margin-bottom: 20px;
+      }
+
+      .image-arena button{
+          text-align: center;
+          margin: 0 auto;
+      }
+
+      .mainWrap {
+        display: block;
+        align-items: center;
+    }
+
+    .childWrap {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .imgWrap img {
+        height: 200px;
+    }
+
+  }
+  
+
